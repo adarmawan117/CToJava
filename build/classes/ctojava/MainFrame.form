@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -61,7 +61,7 @@
               <Properties>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="// test project&#xa;#include&lt;stdio.h&gt;&#xa;&#xa;int main() {&#xa;&#x9;printf(&quot;Hello World&quot;);&#xa;&#x9;return 0;&#xa;}"/>
+                <Property name="text" type="java.lang.String" value="// test project&#xa;#include&lt;stdio.h&gt;&#xa;&#xa;int main() {&#xa;    int a;&#xa;    char b;&#xa;    float c;&#xa;    double d;&#xa;    String e;&#xa;    &#xa;    printf(&quot;Hello World\u005cn&quot;);&#xa;    return 0;&#xa;}" containsInvalidXMLChars="true"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
               <Events>

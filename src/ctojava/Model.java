@@ -9,24 +9,30 @@ public class Model {
     };
     
     public String checkKeyword(String keyword) {
-        if(keyword.contains("#include")) {
+        /* Bagian yang akan dihapus */
+        if(
+            keyword.contains("#include") ||
+            keyword.contains("return 0;")) {
             return "";
             
+        /* Bagian yang akan direplace */
         } else if(keyword.contains("int main") || keyword.contains("void main")) {
-            return keyword.
+            return "    "+ keyword.
                     replace("int", "").
                     replace("void", "").
                     replace("()", "").
                     replace("main", "public static void main(String args[])");
             
         } else if(keyword.contains("printf")) {
-            return keyword.replace("printf", "System.out.print");
+            return "    "+ keyword.replace("printf", "System.out.print");
+        
+        /* bagian pengecekan deklarasi variabel */
+        } else if(keyword.contains("String")) {
+            return "    "+ keyword.replace("String", "char").replace(";", "[255];");
             
-        } else if(keyword.contains("return 0;")) {
-            return "";
-            
+        /* Pelarian terakhir (jika keyword belum dutambahkan kedalam program) */
         } else {
-            return keyword;
+            return "    "+ keyword;
         }
     }
     

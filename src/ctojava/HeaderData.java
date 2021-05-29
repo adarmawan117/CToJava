@@ -57,4 +57,7 @@ public class HeaderData {
         return this.globalVariabel.size();
     }
     
+    public void reset() {
+        this.globalVariabel.clear();
+    }
 }

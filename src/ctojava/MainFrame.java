@@ -31,7 +31,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         txtInput.setColumns(20);
         txtInput.setRows(5);
-        txtInput.setText("// test project\n#include<stdio.h>\n\nint main() {\n\tprintf(\"Hello World\");\n\treturn 0;\n}");
+        txtInput.setText("// test project\n#include<stdio.h>\n\nint main() {\n    int a;\n    char b;\n    float c;\n    double d;\n    String e;\n    \n    printf(\"Hello World\\n\");\n    return 0;\n}");
         txtInput.setToolTipText("");
         txtInput.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -163,6 +163,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void btnTraslateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTraslateActionPerformed
         String inputText = txtInput.getText();
         if(!inputText.isEmpty()) {
+            hData.reset();
             String []listInput = inputText.split("\n");
             processList(listInput);
         }
