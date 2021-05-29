@@ -13,12 +13,12 @@ Project iseng untuk merubah Coding C menjadi Java
 
 # Contoh Simple Hello World
 // test project
-#include<stdio.h>
-
-int main() {
-	printf("Hello World\n");
-	return 0;
-}
+#include<stdio.h><br />
+<br>
+int main() {<br />
+    printf("Hello World\n");<br />
+    return 0;<br />
+}<br />
 <br><br>
 
 # Contoh advance
